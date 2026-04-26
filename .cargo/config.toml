@@ -1,0 +1,8 @@
+[target.aarch64-apple-ios]
+linker = "clang"
+ar = "llvm-ar"
+rustflags = ["-C", "link-arg=-fuse-ld=lld", "-C", "link-arg=--target=arm64-apple-ios14.0.0"]
+
+[env]
+RANLIB = "llvm-ranlib"
+AR = "llvm-ar"
